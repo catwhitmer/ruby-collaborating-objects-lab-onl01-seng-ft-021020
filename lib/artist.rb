@@ -24,8 +24,7 @@ class Artist
   end
   
   def save
-    @@all << self
-    self
+    self.class.all << self
   end
   
   def self.find_or_create_by_name(name)
